@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "converter-pro"
+name = "converterpro"
 version = "0.1.0"
 description = "Python converter library"
 authors = ["Lily Sam <los2119@columbia.edu>"]
