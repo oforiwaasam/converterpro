@@ -1,6 +1,6 @@
 import unittest
 
-from converter.weight_converter import Kilogram
+from converterpro.weight_converter import Kilogram
 
 class TestWeightConverter(unittest.TestCase):
 
