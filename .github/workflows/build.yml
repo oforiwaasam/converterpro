@@ -29,6 +29,14 @@ jobs:
       with:
         path: ./.venv
         key: ${{ runner.os }}-venv-${{ hashFiles('**/poetry.lock') }}
+    - name: Install dependencies
+      run: |
+        make install
+    - name: Lint project
+      run: |
+        make lint
+    - name: Run unit tests
+      run: |
+        make test
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v3
-      
