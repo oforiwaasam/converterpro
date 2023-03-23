@@ -7,8 +7,7 @@ MILLIGRAMS_TO_POUNDS = 453592.37
 MILLIGRAMS_TO_OUNCES = 28349.523125
 
 
-class Gram():
-
+class Gram:
     def __init__(self, value):
         self.value = value
 
@@ -22,8 +21,7 @@ class Gram():
         return self.value / THOUSAND
 
 
-class Milligram():
-
+class Milligram:
     def __init__(self, value):
         self.value = value
 
@@ -43,8 +41,7 @@ class Milligram():
         return self.value / MILLIGRAMS_TO_OUNCES
 
 
-class Kilogram():
-
+class Kilogram:
     def __init__(self, value):
         self.value = value
 

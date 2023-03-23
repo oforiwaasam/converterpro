@@ -50,6 +50,7 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
+python_junit.xml
 
 # Translations
 *.mo
@@ -130,3 +131,6 @@ dmypy.json
 
 ### VisualStudioCode ###
 .vscode/*
+
+# Makefile output
+.install.stamp
