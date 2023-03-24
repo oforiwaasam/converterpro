@@ -31,13 +31,11 @@ fix: format
 #########
 # TESTS #
 #########
-test-py: $(INSTALL_STAMP) ## run all tests
-	$(POETRY) run pytest -v ./tests/ --junit-xml=python_junit.xml
+test: $(INSTALL_STAMP) ## run all tests
+	$(POETRY) run pytest -v ./tests
 
-coverage-py: $(INSTALL_STAMP) ## generate HTML coverage report
-	$(POETRY) run pytest -v ./tests/ --junit-xml=python_junit.xml --cov=converterpro --cov-report=xml:.coverage/coverage.xml --cov-branch --cov-fail-under=75 --cov-report term-missing
-
-test: test-py  ## run all tests
+coverage: $(INSTALL_STAMP) ## generate HTML coverage report
+	$(POETRY) run pytest -v ./tests --cov=converterpro --cov-branch --cov-fail-under=75 --cov-report term-missing
 
 # Alias
 tests: test
