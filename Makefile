@@ -31,16 +31,18 @@ fix: format
 #########
 # TESTS #
 #########
-.PHONY: test
-test: $(INSTALL_STAMP) ## run all tests
+test-py: $(INSTALL_STAMP) ## run all tests
 	$(POETRY) run pytest -v ./tests/ --junit-xml=python_junit.xml
 
-.PHONY: tests
-tests: test
+coverage-py: $(INSTALL_STAMP) ## generate HTML coverage report
+	$(POETRY) run pytest -v ./tests/ --junit-xml=python_junit.xml --cov=converterpro --cov-report=xml:.coverage/coverage.xml --cov-report=html:.coverage/coverage.html --cov-branch --cov-fail-under=75 --cov-report term-missing
 
-.PHONY: coverage
-coverage: $(INSTALL_STAMP) ## generate HTML coverage report
-	$(POETRY) run pytest -v ./tests/ --junit-xml=python_junit.xml --cov=converterpro --cov-branch --cov-fail-under=75 --cov-report term-missing
+show-coverage: coverage-py  ## show interactive python coverage viewer
+	cd .coverage && PYTHONBUFFERED=1 python -m http.server | sec -u "s/0\.0\.0\.0/$$(hostname)/g"
+test: test-py  ## run all tests
+
+# Alias
+tests: test
 
 .PHONY: clean
 clean: ## remove all temporary files
