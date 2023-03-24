@@ -31,14 +31,16 @@ fix: format
 #########
 # TESTS #
 #########
+.PHONY: test
 test: $(INSTALL_STAMP) ## run all tests
-	$(POETRY) run pytest -v ./tests
+	$(POETRY) run pytest ./tests/ --cov-report term-missing --cov $(NAME)
 
-coverage: $(INSTALL_STAMP) ## generate HTML coverage report
-	$(POETRY) run pytest -v ./tests --cov=converterpro --cov-branch --cov-fail-under=75 --cov-report term-missing
-
-# Alias
+.PHONY: tests
 tests: test
+
+.PHONY: coverage
+coverage: $(INSTALL_STAMP) ## generate HTML coverage report
+	$(POETRY) run pytest ./tests/unit/ --cov-report term-missing --cov-report html --cov $(NAME)
 
 .PHONY: clean
 clean: ## remove all temporary files

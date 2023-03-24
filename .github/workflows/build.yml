@@ -9,21 +9,16 @@ on:
 
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        python-version: [3.9]
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
       uses: actions/checkout@v3
 
-    - name: Set up Python ${{ matrix.python-version }}
+    - name: Set up Python 3.9
       uses: actions/setup-python@v4
       with:
-        python-version: ${{ matrix.python-version }}
+        python-version: 3.9
 
     - name: Install poetry
       run: |
@@ -50,14 +45,9 @@ jobs:
     - name: Run unit tests
       run: |
         make tests
-      if: ${{ matrix.os == 'ubuntu-latest' }}
 
-    - name: Upload test results
-      uses: actions/upload-artifact@v3
+    - name: Upload coverage report
+      uses: coverallsapp/github-action@master
       with:
-        name: pytest-results-${{ matrix.os }}-${{ matrix.python-version }}
-        path: python_junit.xml
-      if: ${{ always() }}
-
-    - name: Upload coverage reports to Codecov
-      uses: codecov/codecov-action@v3
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        path-to-lcov: "./coverage.lcov"
