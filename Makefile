@@ -40,7 +40,7 @@ tests: test
 
 .PHONY: coverage
 coverage: $(INSTALL_STAMP) ## generate HTML coverage report
-	$(POETRY) run pytest -v ./tests/ --junit-xml=python_junit.xml
+	$(POETRY) run pytest -v ./tests/ --junit-xml=python_junit.xml --cov=converterpro --cov-branch --cov-fail-under=75 --cov-report term-missing
 
 .PHONY: clean
 clean: ## remove all temporary files
