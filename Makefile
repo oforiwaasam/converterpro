@@ -33,16 +33,16 @@ fix: format
 #########
 .PHONY: test
 test: $(INSTALL_STAMP) ## run all tests
-	$(POETRY) run pytest ./tests/ --cov-report term-missing --cov $(NAME)
+	$(POETRY) run pytest -v ./tests --cov-report lcov --cov $(NAME) 
 
 .PHONY: tests
 tests: test
 
 .PHONY: coverage
 coverage: $(INSTALL_STAMP) ## generate HTML coverage report
-	$(POETRY) run pytest ./tests/unit/ --cov-report term-missing --cov-report html --cov $(NAME)
+	$(POETRY) run pytest -v ./tests --cov-report term-missing --cov-report html --cov $(NAME)
 
 .PHONY: clean
 clean: ## remove all temporary files
 	find . -type d -name "__pycache__" | xargs rm -rf {};
-	rm -rf $(INSTALL_STAMP) .coverage coverage cover htmlcov logs build dist *.egg-info .mypy_cache .pytest_cache .ruff_cache
+	rm -rf $(INSTALL_STAMP) .coverage coverage *.lcov cover htmlcov logs build dist *.egg-info .mypy_cache .pytest_cache .ruff_cache
