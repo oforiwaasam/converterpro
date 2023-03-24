@@ -37,7 +37,7 @@ class Milligram:
     def convert_to_pounds(self):
         return self.value / MILLIGRAMS_TO_POUNDS
 
-    def convert_to_pounds(self):
+    def convert_to_ounces(self):
         return self.value / MILLIGRAMS_TO_OUNCES
 
 
