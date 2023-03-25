@@ -1,3 +1,3 @@
-from .weight_converter import *  # noqa: F403
+from .weight_converter import *
 
 version = "0.1.0"
