@@ -31,10 +31,14 @@ class TestWeightConverter(unittest.TestCase):
 
     def test_kilogram(self):
         test = Kilogram(1.0)
-        self.assertEqual(THOUSAND, test.convert_to_grams(), "Expected: 1000.0")
-        self.assertEqual(MILLION, test.convert_to_milligrams(), "Expected 1000000.0")
-        self.assertEqual(1.0, test.convert_to_kilograms(), "Expected: 1.0")
-        self.assertEqual(2.2046226218488, test.convert_to_pounds(), "Expected 2.2046226218488")
+        self.assertEqual(THOUSAND, test.convert_to_grams(), "Expects a float or 1000.0")
+        self.assertEqual(MILLION, test.convert_to_milligrams(), "Expects a float or 1000000.0")
+        self.assertEqual(1.0, test.convert_to_kilograms(), "Expects a float or 1.0")
+        self.assertEqual(0.001, test.convert_to_metric_tonnes(), "Expects a float or 0.001")
+        self.assertEqual(0.0009842065276110606, test.convert_to_imperial_tons(), "Expects a float or 0.0009842065276110606")
+        self.assertEqual(0.001102311310924388, test.convert_to_us_tons(), "Expects a float or 0.001102311310924388")
+        self.assertEqual(2.2046226218488, test.convert_to_pounds(), "Expects a float or 2.2046226218488")
+        self.assertEqual(35.27396194958, test.convert_to_ounces(), "Expects a float or 35.27396194958")
 
 
 if __name__ == "__main__":
