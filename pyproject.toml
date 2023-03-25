@@ -15,6 +15,16 @@ black = "^23.1.0"
 ruff = "^0.0.258"
 pytest-cov = "^4.0.0"
 
+[tool.black]
+color = true
+line-length = 130
+
+[tool.ruff]
+line-length = 130
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F403"]
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
