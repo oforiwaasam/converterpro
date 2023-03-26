@@ -29,11 +29,14 @@ This library project is a pure python project using modern tooling. It uses a `M
 - `make test`: run automated tests with `pytest`
 - `make coverage`: run automated tests with `pytest` and collect coverage information
 
-## 👩🏾‍💻👨🏾‍💻Contributing
+## 👩🏾‍💻👨🏾‍ Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for more information.
 
 ## License
 
 This software is licensed under the Apache 2.0 license. Please see [LICENSE](LICENSE) for more information.
+
+## 🙎🏾‍ Author
+Main Maintainer: Lily Sam
 
