@@ -51,5 +51,6 @@ class TestWeightConverter(unittest.TestCase):
         self.assertEqual(2204.6226218488, test.convert_to_pounds(), "Expects a float or 2204.6226218488")
         self.assertEqual(35273.96194958, test.convert_to_ounces(), "Expects a float or 35273.96194958")
 
+
 if __name__ == "__main__":
     unittest.main()
