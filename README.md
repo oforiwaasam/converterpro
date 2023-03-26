@@ -4,7 +4,7 @@ A python library to convert units and currencies
 ![Hex.pm](https://img.shields.io/hexpm/l/apa?style=flat&color=brightgreen)
 ![GitHub issues](https://img.shields.io/github/issues/oforiwaasam/converterpro)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/oforiwaasam/converterpro/build.yml)](https://github.com/oforiwaasam/converterpro/actions/workflows/build.yml)
-[![Coverage Status](https://coveralls.io/repos/github/oforiwaasam/converterpro/badge.svg?branch=main)](https://coveralls.io/github/oforiwaasam/converterpro?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/oforiwaasam/converterpro/badge.svg?branch=main&kill_cache=1)](https://coveralls.io/github/oforiwaasam/converterpro?branch=main)
 [![black](https://img.shields.io/badge/code%20style-black-000000)](https://github.com/psf/black)
 [![poetry](https://img.shields.io/badge/packaging-poetry-008adf)](https://python-poetry.org/)
 
