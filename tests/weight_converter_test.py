@@ -1,6 +1,6 @@
 import unittest
 
-from converterpro import Gram, Milligram, Kilogram
+from converterpro import Gram, Milligram, Kilogram, MetricTonnes
 
 THOUSAND = 1e3
 MILLION = 1e6
@@ -39,6 +39,17 @@ class TestWeightConverter(unittest.TestCase):
         self.assertEqual(0.001102311310924388, test.convert_to_us_tons(), "Expects a float or 0.001102311310924388")
         self.assertEqual(2.2046226218488, test.convert_to_pounds(), "Expects a float or 2.2046226218488")
         self.assertEqual(35.27396194958, test.convert_to_ounces(), "Expects a float or 35.27396194958")
+
+    def test_metric_tonnes(self):
+        test = MetricTonnes(1.0)
+        self.assertEqual(1e6, test.convert_to_grams(), "Expects a float or 1000000.0")
+        self.assertEqual(1e9, test.convert_to_milligrams(), "Expects a float or 1000000000.0")
+        self.assertEqual(1000.0, test.convert_to_kilograms(), "Expects a float or 1000.0")
+        self.assertEqual(1.0, test.convert_to_metric_tonnes(), "Expects a float or 1.0")
+        self.assertEqual(0.9842065276110608, test.convert_to_imperial_tons(), "Expects a float or 0.9842065276110608")
+        self.assertEqual(1.1023113109244, test.convert_to_us_tons(), "Expects a float or 1.1023113109244")
+        self.assertEqual(2204.6226218488, test.convert_to_pounds(), "Expects a float or 2204.6226218488")
+        self.assertEqual(35273.96194958, test.convert_to_ounces(), "Expects a float or 35273.96194958")
 
 
 if __name__ == "__main__":
