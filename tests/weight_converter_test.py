@@ -1,6 +1,6 @@
 import unittest
 
-from converterpro import Gram, Milligram, Kilogram, MetricTonnes
+from converterpro import Gram, Milligram, Kilogram, MetricTonnes, ImperialTons, USTons
 
 THOUSAND = 1e3
 MILLION = 1e6
@@ -50,6 +50,28 @@ class TestWeightConverter(unittest.TestCase):
         self.assertEqual(1.1023113109244, test.convert_to_us_tons(), "Expects a float or 1.1023113109244")
         self.assertEqual(2204.6226218488, test.convert_to_pounds(), "Expects a float or 2204.6226218488")
         self.assertEqual(35273.96194958, test.convert_to_ounces(), "Expects a float or 35273.96194958")
+
+    def test_imperial_tons(self):
+        test = ImperialTons(1.0)
+        self.assertEqual(1016046.9088, test.convert_to_grams(), "Expects a float or 1016046.9088")
+        self.assertEqual(1016046908.8, test.convert_to_milligrams(), "Expects a float or 1016046908.8")
+        self.assertEqual(1016.0469088, test.convert_to_kilograms(), "Expects a float or 1016.0469088")
+        self.assertEqual(1.0160469088, test.convert_to_metric_tonnes(), "Expects a float or 1.0160469088")
+        self.assertEqual(1.0, test.convert_to_imperial_tons(), "Expects a float or 1.0")
+        self.assertEqual(1.12, test.convert_to_us_tons(), "Expects a float or 1.12")
+        self.assertEqual(2240, test.convert_to_pounds(), "Expects a float or 2240")
+        self.assertEqual(35840, test.convert_to_ounces(), "Expects a float or 35840")
+
+    def test_us_tons(self):
+        test = USTons(1.0)
+        self.assertEqual(907184.74, test.convert_to_grams(), "Expects a float or 907184.74")
+        self.assertEqual(907184740, test.convert_to_milligrams(), "Expects a float or 907184740")
+        self.assertEqual(907.18474, test.convert_to_kilograms(), "Expects a float or 907.18474")
+        self.assertEqual(0.90718473999999, test.convert_to_metric_tonnes(), "Expects a float or 0.90718473999999")
+        self.assertEqual(0.8928571428571428, test.convert_to_imperial_tons(), "Expects a float or 0.8928571428571428")
+        self.assertEqual(1.0, test.convert_to_us_tons(), "Expects a float or 1.0")
+        self.assertEqual(2000, test.convert_to_pounds(), "Expects a float or 2000")
+        self.assertEqual(32000, test.convert_to_ounces(), "Expects a float or 32000")
 
 
 if __name__ == "__main__":
