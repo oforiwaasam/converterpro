@@ -1,11 +1,11 @@
 import unittest
-
+# from converterpro.weight_converter import Gram, Milligram, Kilogram, MetricTonnes
 from converterpro import Gram, Milligram, Kilogram, MetricTonnes
 
 THOUSAND = 1e3
 MILLION = 1e6
 
-
+# Test class for weight converter
 class TestWeightConverter(unittest.TestCase):
     def test_gram(self):
         test = Gram(1.0)
@@ -51,6 +51,6 @@ class TestWeightConverter(unittest.TestCase):
         self.assertEqual(2204.6226218488, test.convert_to_pounds(), "Expects a float or 2204.6226218488")
         self.assertEqual(35273.96194958, test.convert_to_ounces(), "Expects a float or 35273.96194958")
 
-
+# Run the test
 if __name__ == "__main__":
     unittest.main()
