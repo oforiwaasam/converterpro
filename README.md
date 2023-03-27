@@ -4,9 +4,11 @@ A python library to convert units and currencies
 ![Hex.pm](https://img.shields.io/hexpm/l/apa?style=flat&color=brightgreen)
 ![GitHub issues](https://img.shields.io/github/issues/oforiwaasam/converterpro)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/oforiwaasam/converterpro/build.yml)](https://github.com/oforiwaasam/converterpro/actions/workflows/build.yml)
-[![Coverage Status](https://coveralls.io/repos/github/oforiwaasam/converterpro/badge.svg?branch=main&kill_cache=1)](https://coveralls.io/github/oforiwaasam/converterpro?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/oforiwaasam/converterpro/badge.svg?branch=main)](https://coveralls.io/github/oforiwaasam/converterpro?branch=main)
 [![black](https://img.shields.io/badge/code%20style-black-000000)](https://github.com/psf/black)
 [![poetry](https://img.shields.io/badge/packaging-poetry-008adf)](https://python-poetry.org/)
+[![PyPI](https://img.shields.io/pypi/v/converterpro)](https://pypi.org/project/converterpro/)
+
 
 ## 🔭 Overview
 This python library will allow developers to easily incorporate conversions into their programs without having to write all the logic for it. The library currently has the following functionalities:
@@ -29,11 +31,11 @@ This library project is a pure python project using modern tooling. It uses a `M
 - `make test`: run automated tests with `pytest`
 - `make coverage`: run automated tests with `pytest` and collect coverage information
 
-## 👩🏾‍💻👨🏾‍ Contributing
+## 👩🏾‍💻👨🏾‍💻 Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for more information.
 
-## License
+## 🪪 License
 
 This software is licensed under the Apache 2.0 license. Please see [LICENSE](LICENSE) for more information.
 
