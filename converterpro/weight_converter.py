@@ -1,7 +1,10 @@
+
 THOUSAND = 1e3
 MILLION = 1e6
 BILLION = 1e9
 TRILLION = 1e12
+
+#Constants for weight conversion
 
 GRAMS_TO_POUNDS = 453.59237
 GRAMS_TO_OUNCES = 28.349523125
@@ -31,7 +34,9 @@ US_TONS_TO_POUNDS = 2000
 US_TONS_TO_OUNCES = 32000
 
 
-# METRIC SYSTEM OF MEASUREMENTS
+# Classes for different units of mass in the metric system
+
+# Grams
 class Gram:
     def __init__(self, value):
         self.value = value
@@ -60,7 +65,7 @@ class Gram:
     def convert_to_ounces(self):
         return self.value / GRAMS_TO_OUNCES
 
-
+# Milligrams
 class Milligram:
     def __init__(self, value):
         self.value = value
@@ -89,7 +94,7 @@ class Milligram:
     def convert_to_ounces(self):
         return self.value / MILLIGRAMS_TO_OUNCES
 
-
+# Kilograms
 class Kilogram:
     def __init__(self, value):
         self.value = value
@@ -118,7 +123,7 @@ class Kilogram:
     def convert_to_ounces(self):
         return self.value * KILOGRAMS_TO_OUNCES
 
-
+# Metric Tonnes
 class MetricTonnes:
     def __init__(self, value):
         self.value = value
