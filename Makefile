@@ -9,6 +9,10 @@ $(INSTALL_STAMP): pyproject.toml poetry.lock
 	$(POETRY) install
 	touch $(INSTALL_STAMP)
 
+.PHONY: build
+build:  ## build the python library
+	$(POETRY) build
+
 #########
 # LINTS #
 #########
@@ -41,6 +45,22 @@ tests: test
 .PHONY: coverage
 coverage: $(INSTALL_STAMP) ## generate HTML coverage report
 	$(POETRY) run pytest -v ./tests --cov-report term-missing --cov-report html --cov $(NAME)
+
+###########
+# VERSION #
+###########
+patch:
+	$(POETRY) run bump2version patch
+
+minor:
+	$(POETRY) run bump2version minor
+
+major:
+	$(POETRY) run bump2version major
+
+.PHONY: publish
+publish:  # Upload python assets
+	$(POETRY) publish
 
 .PHONY: clean
 clean: ## remove all temporary files
