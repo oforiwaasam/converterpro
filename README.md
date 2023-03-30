@@ -14,7 +14,7 @@ A python library to convert units and currencies
 This python library will allow developers to easily incorporate conversions into their programs without having to write all the logic for it. The library currently has the following functionalities:
 - Converting Metric System, Imperial System and US System Measurements
 
-## Installation
+## 🛠️ Installation
 
 Install **converterpro** with `pip`:
 
