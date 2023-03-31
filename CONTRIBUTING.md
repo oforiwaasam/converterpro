@@ -2,7 +2,7 @@
 
 If you want to contribute to this repository here are some helpful guidelines.
 
-## Reporting bugs, feature requests, etc.
+## Reporting bugs, feature requests, etc
 
 To report bugs, request new features or similar, please open an issue on the Github
 repository.
@@ -14,7 +14,7 @@ A good bug report includes:
 - Steps to reproduce (preferably as minimal as possible)
 - Possibly any output from the browser console (typically available via Ctrl + Shift + J or via F12).
 
-## Minor changes, typos etc.
+## Minor changes, typos etc
 
 Minor changes can be contributed by navigating to the relevant files on the Github repository,
 and clicking the "edit file" icon. By following the instructions on the page you should be able to
