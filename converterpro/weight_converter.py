@@ -30,6 +30,8 @@ IMPERIAL_TONS_TO_OUNCES = 35840
 US_TONS_TO_POUNDS = 2000
 US_TONS_TO_OUNCES = 32000
 
+POUNDS_TO_OUNCES = 16
+
 
 # METRIC SYSTEM OF MEASUREMENTS
 class Gram:
@@ -80,7 +82,7 @@ class Milligram:
     def convert_to_imperial_tons(self):
         return self.value / MILLIGRAMS_TO_IMPERIAL_TONS
 
-    def convert_to_us_tons(self) -> float:
+    def convert_to_us_tons(self):
         return self.value / MILLIGRAMS_TO_US_TONS
 
     def convert_to_pounds(self):
@@ -168,13 +170,13 @@ class ImperialTons:
     def convert_to_imperial_tons(self):
         return self.value
 
-    def convert_to_us_tons(self) -> float:
+    def convert_to_us_tons(self):
         return self.value * IMPERIAL_TONS_TO_US_TONS
 
-    def convert_to_pounds(self) -> float:
+    def convert_to_pounds(self):
         return self.value * IMPERIAL_TONS_TO_POUNDS
 
-    def convert_to_ounces(self) -> float:
+    def convert_to_ounces(self):
         return self.value * IMPERIAL_TONS_TO_OUNCES
 
 
@@ -182,9 +184,6 @@ class ImperialTons:
 class USTons:
     def __init__(self, value):
         self.value = value
-
-    def convert_to_us_tons(self):
-        return self.value
 
     def convert_to_grams(self):
         return self.value * GRAMS_TO_US_TONS
@@ -201,8 +200,69 @@ class USTons:
     def convert_to_imperial_tons(self):
         return self.value / IMPERIAL_TONS_TO_US_TONS
 
+    def convert_to_us_tons(self):
+        return self.value
+
     def convert_to_pounds(self):
         return self.value * US_TONS_TO_POUNDS
 
     def convert_to_ounces(self):
         return self.value * US_TONS_TO_OUNCES
+
+
+class Pounds:
+    def __init__(self, value):
+        self.value = value
+
+    def to_metric_tonnes(self):
+        return self.value / METRIC_TONNES_TO_POUNDS
+
+    def to_kilograms(self):
+        return self.value / KILOGRAMS_TO_POUNDS
+
+    def to_grams(self):
+        return self.value * GRAMS_TO_POUNDS
+
+    def to_milligrams(self):
+        return self.value * MILLIGRAMS_TO_POUNDS
+
+    def to_imperial_tons(self):
+        return self.value / IMPERIAL_TONS_TO_POUNDS
+
+    def to_us_tons(self) -> float:
+        return self.value / US_TONS_TO_POUNDS
+
+    def to_pounds(self):
+        return self.value
+
+    def to_ounces(self):
+        return self.value * POUNDS_TO_OUNCES
+
+
+class Ounces:
+    def __init__(self, value: float = 1.0):
+        self.value = value
+
+    def to_metric_tonnes(self):
+        return self.value / METRIC_TONNES_TO_OUNCES
+
+    def to_kilograms(self):
+        return self.value / KILOGRAMS_TO_OUNCES
+
+    def to_grams(self):
+        return self.value * GRAMS_TO_OUNCES
+
+    def to_milligrams(self):
+        return self.value * MILLIGRAMS_TO_OUNCES
+
+    def to_imperial_tons(self):
+        return self.value / IMPERIAL_TONS_TO_OUNCES
+
+    def to_us_tons(self):
+        return self.value / US_TONS_TO_OUNCES
+
+    def to_pounds(self):
+        return self.value / POUNDS_TO_OUNCES
+
+    def to_ounces(self):
+        return self.value
