@@ -1,6 +1,7 @@
 import unittest
 
-from converterpro import Gram, Milligram, Kilogram, MetricTonnes, ImperialTons, USTons
+# from converterpro import Gram, Milligram, Kilogram, MetricTonnes, ImperialTons, USTons
+from converterpro import weight_converter
 
 THOUSAND = 1e3
 MILLION = 1e6
@@ -8,7 +9,7 @@ MILLION = 1e6
 
 class TestWeightConverter(unittest.TestCase):
     def test_gram(self):
-        test = Gram(1.0)
+        test = weight_converter.Gram(1.0)
         self.assertEqual(1.0, test.convert_to_grams(), "Expects a float or 1.0")
         self.assertEqual(THOUSAND, test.convert_to_milligrams(), "Expects a float or 1000.0")
         self.assertEqual(0.001, test.convert_to_kilograms(), "Expects a float or 0.001")
@@ -19,7 +20,7 @@ class TestWeightConverter(unittest.TestCase):
         self.assertEqual(0.035273961949580414, test.convert_to_ounces(), "Expects a float or 0.035273961949580414")
 
     def test_milligram(self):
-        test = Milligram(1.0)
+        test = weight_converter.Milligram(1.0)
         self.assertEqual(0.001, test.convert_to_grams(), "Expects a float or 0.001")
         self.assertEqual(1.0, test.convert_to_milligrams(), "Expects a float or 1.0")
         self.assertEqual(1e-6, test.convert_to_kilograms(), "Expects a float or 1e-6")
@@ -30,7 +31,7 @@ class TestWeightConverter(unittest.TestCase):
         self.assertEqual(3.5273961949580415e-05, test.convert_to_ounces(), "Expects a float or 3.5273961949580415e-05")
 
     def test_kilogram(self):
-        test = Kilogram(1.0)
+        test = weight_converter.Kilogram(1.0)
         self.assertEqual(THOUSAND, test.convert_to_grams(), "Expects a float or 1000.0")
         self.assertEqual(MILLION, test.convert_to_milligrams(), "Expects a float or 1000000.0")
         self.assertEqual(1.0, test.convert_to_kilograms(), "Expects a float or 1.0")
@@ -41,7 +42,7 @@ class TestWeightConverter(unittest.TestCase):
         self.assertEqual(35.27396194958, test.convert_to_ounces(), "Expects a float or 35.27396194958")
 
     def test_metric_tonnes(self):
-        test = MetricTonnes(1.0)
+        test = weight_converter.MetricTonnes(1.0)
         self.assertEqual(1e6, test.convert_to_grams(), "Expects a float or 1000000.0")
         self.assertEqual(1e9, test.convert_to_milligrams(), "Expects a float or 1000000000.0")
         self.assertEqual(1000.0, test.convert_to_kilograms(), "Expects a float or 1000.0")
@@ -52,7 +53,7 @@ class TestWeightConverter(unittest.TestCase):
         self.assertEqual(35273.96194958, test.convert_to_ounces(), "Expects a float or 35273.96194958")
 
     def test_imperial_tons(self):
-        test = ImperialTons(1.0)
+        test = weight_converter.ImperialTons(1.0)
         self.assertEqual(1016046.9088, test.convert_to_grams(), "Expects a float or 1016046.9088")
         self.assertEqual(1016046908.8, test.convert_to_milligrams(), "Expects a float or 1016046908.8")
         self.assertEqual(1016.0469088, test.convert_to_kilograms(), "Expects a float or 1016.0469088")
@@ -63,7 +64,7 @@ class TestWeightConverter(unittest.TestCase):
         self.assertEqual(35840, test.convert_to_ounces(), "Expects a float or 35840")
 
     def test_us_tons(self):
-        test = USTons(1.0)
+        test = weight_converter.USTons(1.0)
         self.assertEqual(907184.74, test.convert_to_grams(), "Expects a float or 907184.74")
         self.assertEqual(907184740, test.convert_to_milligrams(), "Expects a float or 907184740")
         self.assertEqual(907.18474, test.convert_to_kilograms(), "Expects a float or 907.18474")
