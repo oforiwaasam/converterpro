@@ -36,7 +36,7 @@ line-length = 130
 line-length = 130
 
 [tool.ruff.per-file-ignores]
-"__init__.py" = ["F403"]
+"__init__.py" = ["F403", "F401"]
 
 [build-system]
 requires = ["poetry-core"]

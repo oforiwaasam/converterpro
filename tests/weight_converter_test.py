@@ -74,6 +74,28 @@ class TestWeightConverter(unittest.TestCase):
         self.assertEqual(2000, test.convert_to_pounds(), "Expects a float or 2000")
         self.assertEqual(32000, test.convert_to_ounces(), "Expects a float or 32000")
 
+    def test_pounds(self):
+        test = weight_converter.Pounds(1.0)
+        self.assertEqual(453.59237, test.convert_to_grams(), "Expects a float or 453.59237")
+        self.assertEqual(453592.37, test.convert_to_milligrams(), "Expects a float or 453592.37")
+        self.assertEqual(0.453592369999995, test.convert_to_kilograms(), "Expects a float or 0.453592369999995")
+        self.assertEqual(0.000453592369999995, test.convert_to_metric_tonnes(), "Expects a float or 0.000453592369999995")
+        self.assertEqual(0.0004464285714285714, test.convert_to_imperial_tons(), "Expects a float or 0.0004464285714285714")
+        self.assertEqual(0.0005, test.convert_to_us_tons(), "Expects a float or 0.0005")
+        self.assertEqual(1.0, test.convert_to_pounds(), "Expects a float or 1.0")
+        self.assertEqual(16, test.convert_to_ounces(), "Expects a float or 16")
+
+    def test_ounces(self):
+        test = weight_converter.Ounces(1.0)
+        self.assertEqual(28.349523125, test.convert_to_grams(), "Expects a float or 28.349523125")
+        self.assertEqual(28349.523125, test.convert_to_milligrams(), "Expects a float or 28349.523125")
+        self.assertEqual(0.028349523125000334, test.convert_to_kilograms(), "Expects a float or 0.028349523125000334")
+        self.assertEqual(2.834952312500033e-05, test.convert_to_metric_tonnes(), "Expects a float or 2.834952312500033e-05")
+        self.assertEqual(2.7901785714285713e-05, test.convert_to_imperial_tons(), "Expects a float or 2.7901785714285713e-05")
+        self.assertEqual(3.125e-05, test.convert_to_us_tons(), "Expects a float or 3.125e-05")
+        self.assertEqual(0.0625, test.convert_to_pounds(), "Expects a float or 0.0625")
+        self.assertEqual(1.0, test.convert_to_ounces(), "Expects a float or 1.0")
+
 
 if __name__ == "__main__":
     unittest.main()

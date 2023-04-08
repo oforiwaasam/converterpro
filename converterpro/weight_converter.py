@@ -214,28 +214,28 @@ class Pounds:
     def __init__(self, value):
         self.value = value
 
-    def to_metric_tonnes(self):
-        return self.value / METRIC_TONNES_TO_POUNDS
-
-    def to_kilograms(self):
-        return self.value / KILOGRAMS_TO_POUNDS
-
-    def to_grams(self):
+    def convert_to_grams(self):
         return self.value * GRAMS_TO_POUNDS
 
-    def to_milligrams(self):
+    def convert_to_milligrams(self):
         return self.value * MILLIGRAMS_TO_POUNDS
 
-    def to_imperial_tons(self):
+    def convert_to_kilograms(self):
+        return self.value / KILOGRAMS_TO_POUNDS
+
+    def convert_to_metric_tonnes(self):
+        return self.value / METRIC_TONNES_TO_POUNDS
+
+    def convert_to_imperial_tons(self):
         return self.value / IMPERIAL_TONS_TO_POUNDS
 
-    def to_us_tons(self) -> float:
+    def convert_to_us_tons(self):
         return self.value / US_TONS_TO_POUNDS
 
-    def to_pounds(self):
+    def convert_to_pounds(self):
         return self.value
 
-    def to_ounces(self):
+    def convert_to_ounces(self):
         return self.value * POUNDS_TO_OUNCES
 
 
@@ -243,26 +243,26 @@ class Ounces:
     def __init__(self, value: float = 1.0):
         self.value = value
 
-    def to_metric_tonnes(self):
-        return self.value / METRIC_TONNES_TO_OUNCES
-
-    def to_kilograms(self):
-        return self.value / KILOGRAMS_TO_OUNCES
-
-    def to_grams(self):
+    def convert_to_grams(self):
         return self.value * GRAMS_TO_OUNCES
 
-    def to_milligrams(self):
+    def convert_to_milligrams(self):
         return self.value * MILLIGRAMS_TO_OUNCES
 
-    def to_imperial_tons(self):
+    def convert_to_kilograms(self):
+        return self.value / KILOGRAMS_TO_OUNCES
+
+    def convert_to_metric_tonnes(self):
+        return self.value / METRIC_TONNES_TO_OUNCES
+
+    def convert_to_imperial_tons(self):
         return self.value / IMPERIAL_TONS_TO_OUNCES
 
-    def to_us_tons(self):
+    def convert_to_us_tons(self):
         return self.value / US_TONS_TO_OUNCES
 
-    def to_pounds(self):
+    def convert_to_pounds(self):
         return self.value / POUNDS_TO_OUNCES
 
-    def to_ounces(self):
+    def convert_to_ounces(self):
         return self.value
