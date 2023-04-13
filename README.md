@@ -21,10 +21,15 @@ This python library will allow developers to easily incorporate conversions into
   + Grams
   + Milligrams
   + Kilograms
+  + Metric Tonnes
+  + Imperial Tons
+  + US tons
+  + Pounds
+  + Ounces
 
 ## 🛠️ Installation
 
-**converterpro** can be found on PyPi and hence can be installed with `pip`:
+**converterpro** can be found on [PyPi](https://pypi.org/project/converterpro/0.1.1/) and hence can be installed with `pip`:
 
 ```bash
 pip install converterpro
