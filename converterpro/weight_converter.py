@@ -35,6 +35,15 @@ POUNDS_TO_OUNCES = 16
 
 # METRIC SYSTEM OF MEASUREMENTS
 class Gram:
+    """The Gram class converts from grams to other units.
+
+    Attributes
+    ----------
+    value : float
+        the value in Grams that is to be converted.
+
+    """
+
     def __init__(self, value):
         self.value = value
 
@@ -64,6 +73,8 @@ class Gram:
 
 
 class Milligram:
+    """The Milligram class converts from milligrams to other units."""
+
     def __init__(self, value):
         self.value = value
 
@@ -93,6 +104,8 @@ class Milligram:
 
 
 class Kilogram:
+    """The Kilogram class converts from kilograms to other units."""
+
     def __init__(self, value):
         self.value = value
 
@@ -122,6 +135,8 @@ class Kilogram:
 
 
 class MetricTonnes:
+    """The MetricTonnes class converts from Metric tonnes to other units."""
+
     def __init__(self, value):
         self.value = value
 
@@ -152,6 +167,8 @@ class MetricTonnes:
 
 # UK TONS / IMPERIAL TONS
 class ImperialTons:
+    """The ImperialTons class converts from imperial tons to other units."""
+
     def __init__(self, value):
         self.value = value
 
@@ -182,6 +199,8 @@ class ImperialTons:
 
 # US TONS
 class USTons:
+    """The USTons class converts from US Tons to other units."""
+
     def __init__(self, value):
         self.value = value
 
@@ -211,6 +230,8 @@ class USTons:
 
 
 class Pounds:
+    """The Pounds class converts from pounds to other units."""
+
     def __init__(self, value):
         self.value = value
 
@@ -240,6 +261,8 @@ class Pounds:
 
 
 class Ounces:
+    """The Ounces class converts from ounces to other units."""
+
     def __init__(self, value: float = 1.0):
         self.value = value
 
