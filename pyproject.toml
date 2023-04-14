@@ -5,6 +5,9 @@ description = "Python converter library"
 authors = ["Lily Sam <los2119@columbia.edu>"]
 license = "Apache-2.0"
 readme = "README.md"
+homepage = "https://github.com/oforiwaasam/converterpro"
+repository = "https://github.com/oforiwaasam/converterpro"
+keywords = ["weight-conversion", "converter", "oforiwaasam"]
 
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -33,6 +36,8 @@ optional = true
 
 [tool.poetry.group.docs.dependencies]
 mkdocs = "^1.4.2"
+mkdocstrings = {extras = ["python"], version = "^0.21.2"}
+mkdocs-material = "^9.1.6"
 
 [tool.black]
 color = true
