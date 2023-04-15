@@ -73,7 +73,14 @@ class Gram:
 
 
 class Milligram:
-    """The Milligram class converts from milligrams to other units."""
+    """The Milligram class converts from milligrams to other units.
+
+    Attributes
+    ----------
+    value : float
+        the value in Milligrams that is to be converted.
+
+    """
 
     def __init__(self, value):
         self.value = value
@@ -104,7 +111,14 @@ class Milligram:
 
 
 class Kilogram:
-    """The Kilogram class converts from kilograms to other units."""
+    """The Kilogram class converts from kilograms to other units.
+
+    Attributes
+    ----------
+    value : float
+        the value in Kilograms that is to be converted.
+
+    """
 
     def __init__(self, value):
         self.value = value
@@ -135,7 +149,14 @@ class Kilogram:
 
 
 class MetricTonnes:
-    """The MetricTonnes class converts from Metric tonnes to other units."""
+    """The MetricTonnes class converts from Metric tonnes to other units.
+
+    Attributes
+    ----------
+    value : float
+        the value in MetricTonnes that is to be converted.
+
+    """
 
     def __init__(self, value):
         self.value = value
@@ -167,7 +188,14 @@ class MetricTonnes:
 
 # UK TONS / IMPERIAL TONS
 class ImperialTons:
-    """The ImperialTons class converts from imperial tons to other units."""
+    """The ImperialTons class converts from imperial tons to other units.
+
+    Attributes
+    ----------
+    value : float
+        the value in ImperialTons that is to be converted.
+
+    """
 
     def __init__(self, value):
         self.value = value
@@ -199,7 +227,14 @@ class ImperialTons:
 
 # US TONS
 class USTons:
-    """The USTons class converts from US Tons to other units."""
+    """The USTons class converts from US Tons to other units.
+
+    Attributes
+    ----------
+    value : float
+        the value in USTons that is to be converted.
+
+    """
 
     def __init__(self, value):
         self.value = value
@@ -230,7 +265,14 @@ class USTons:
 
 
 class Pounds:
-    """The Pounds class converts from pounds to other units."""
+    """The Pounds class converts from pounds to other units.
+
+    Attributes
+    ----------
+    value : float
+        the value in Pounds that is to be converted.
+
+    """
 
     def __init__(self, value):
         self.value = value
@@ -261,7 +303,14 @@ class Pounds:
 
 
 class Ounces:
-    """The Ounces class converts from ounces to other units."""
+    """The Ounces class converts from ounces to other units.
+
+    Attributes
+    ----------
+    value : float
+        the value in Ounces that is to be converted.
+
+    """
 
     def __init__(self, value: float = 1.0):
         self.value = value
