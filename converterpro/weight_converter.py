@@ -104,12 +104,30 @@ class Gram:
         return self.value / GRAMS_TO_IMPERIAL_TONS
 
     def convert_to_us_tons(self):
+        """
+        Converts value to us tons
+
+        Returns:
+            float: The new value in us tons
+        """
         return self.value / GRAMS_TO_US_TONS
 
     def convert_to_pounds(self):
+        """
+        Converts value to pounds
+
+        Returns:
+            float: The new value in pounds
+        """
         return self.value / GRAMS_TO_POUNDS
 
     def convert_to_ounces(self):
+        """
+        Converts value to ounces
+
+        Returns:
+            float: The new value in ounces
+        """
         return self.value / GRAMS_TO_OUNCES
 
 
@@ -183,12 +201,30 @@ class Milligram:
         return self.value / MILLIGRAMS_TO_IMPERIAL_TONS
 
     def convert_to_us_tons(self):
+        """
+        Converts value to us tons
+
+        Returns:
+            float: The new value in us tons
+        """
         return self.value / MILLIGRAMS_TO_US_TONS
 
     def convert_to_pounds(self):
+        """
+        Converts value to pounds
+
+        Returns:
+            float: The new value in pounds
+        """
         return self.value / MILLIGRAMS_TO_POUNDS
 
     def convert_to_ounces(self):
+        """
+        Converts value to ounces
+
+        Returns:
+            float: The new value in ounces
+        """
         return self.value / MILLIGRAMS_TO_OUNCES
 
 
@@ -262,12 +298,30 @@ class Kilogram:
         return self.value / KILOGRAMS_TO_IMPERIAL_TONS
 
     def convert_to_us_tons(self):
+        """
+        Converts value to us tons
+
+        Returns:
+            float: The new value in us tons
+        """
         return self.value / KILOGRAMS_TO_US_TONS
 
     def convert_to_pounds(self):
+        """
+        Converts value to pounds
+
+        Returns:
+            float: The new value in pounds
+        """
         return self.value * KILOGRAMS_TO_POUNDS
 
     def convert_to_ounces(self):
+        """
+        Converts value to ounces
+
+        Returns:
+            float: The new value in ounces
+        """
         return self.value * KILOGRAMS_TO_OUNCES
 
 
@@ -341,12 +395,30 @@ class MetricTonnes:
         return self.value / METRIC_TONNES_TO_IMPERIAL_TONS
 
     def convert_to_us_tons(self):
+        """
+        Converts value to us tons
+
+        Returns:
+            float: The new value in us tons
+        """
         return self.value * METRIC_TONNES_TO_US_TONS
 
     def convert_to_pounds(self):
+        """
+        Converts value to pounds
+
+        Returns:
+            float: The new value in pounds
+        """
         return self.value * METRIC_TONNES_TO_POUNDS
 
     def convert_to_ounces(self):
+        """
+        Converts value to ounces
+
+        Returns:
+            float: The new value in ounces
+        """
         return self.value * METRIC_TONNES_TO_OUNCES
 
 
@@ -421,12 +493,30 @@ class ImperialTons:
         return self.value
 
     def convert_to_us_tons(self):
+        """
+        Converts value to us tons
+
+        Returns:
+            float: The new value in us tons
+        """
         return self.value * IMPERIAL_TONS_TO_US_TONS
 
     def convert_to_pounds(self):
+        """
+        Converts value to pounds
+
+        Returns:
+            float: The new value in pounds
+        """
         return self.value * IMPERIAL_TONS_TO_POUNDS
 
     def convert_to_ounces(self):
+        """
+        Converts value to ounces
+
+        Returns:
+            float: The new value in ounces
+        """
         return self.value * IMPERIAL_TONS_TO_OUNCES
 
 
@@ -501,12 +591,30 @@ class USTons:
         return self.value / IMPERIAL_TONS_TO_US_TONS
 
     def convert_to_us_tons(self):
+        """
+        Converts value to us tons
+
+        Returns:
+            float: The new value in us tons
+        """
         return self.value
 
     def convert_to_pounds(self):
+        """
+        Converts value to pounds
+
+        Returns:
+            float: The new value in pounds
+        """
         return self.value * US_TONS_TO_POUNDS
 
     def convert_to_ounces(self):
+        """
+        Converts value to ounces
+
+        Returns:
+            float: The new value in ounces
+        """
         return self.value * US_TONS_TO_OUNCES
 
 
@@ -580,12 +688,30 @@ class Pounds:
         return self.value / IMPERIAL_TONS_TO_POUNDS
 
     def convert_to_us_tons(self):
+        """
+        Converts value to us tons
+
+        Returns:
+            float: The new value in us tons
+        """
         return self.value / US_TONS_TO_POUNDS
 
     def convert_to_pounds(self):
+        """
+        Converts value to pounds
+
+        Returns:
+            float: The new value in pounds
+        """
         return self.value
 
     def convert_to_ounces(self):
+        """
+        Converts value to ounces
+
+        Returns:
+            float: The new value in ounces
+        """
         return self.value * POUNDS_TO_OUNCES
 
 
@@ -659,10 +785,28 @@ class Ounces:
         return self.value / IMPERIAL_TONS_TO_OUNCES
 
     def convert_to_us_tons(self):
+        """
+        Converts value to us tons
+
+        Returns:
+            float: The new value in us tons
+        """
         return self.value / US_TONS_TO_OUNCES
 
     def convert_to_pounds(self):
+        """
+        Converts value to pounds
+
+        Returns:
+            float: The new value in pounds
+        """
         return self.value / POUNDS_TO_OUNCES
 
     def convert_to_ounces(self):
+        """
+        Converts value to ounces
+
+        Returns:
+            float: The new value in ounces
+        """
         return self.value
