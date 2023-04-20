@@ -1,0 +1,29 @@
+site_name: ConverterPro
+site_url: https://oforiwaasam.github.io/converterpro/
+repo_url: https://github.com/oforiwaasam/converterpro
+repo_name: oforiwaasam/converterpro
+site_description: A unit conversion library in Python
+copyright: |
+  Copyright &copy; 2023 <a href="https://github.com/oforiwaasam"  target="_blank">Lily Sam</a>
+watch:
+  - converterpro
+  - README.md
+  - LICENSE
+  - CONTRIBUTING.md
+
+plugins:
+  - search
+  - mkdocstrings
+
+nav:
+- Home:
+  - Overview: index.md
+- User Guide:
+  - Weight Converter Usage: usage.md
+- API Reference: 
+  - Weight Converter reference: weight_converter_reference.md
+
+theme:
+  name: material
+  icon: 
+    repo: fontawesome/brands/github
