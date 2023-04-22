@@ -10,6 +10,7 @@ A python library to convert units and currencies
 [![poetry](https://img.shields.io/badge/packaging-poetry-008adf)](https://python-poetry.org/)
 [![PyPI](https://img.shields.io/pypi/v/converterpro)](https://pypi.org/project/converterpro/)
 [![Deployment](https://img.shields.io/github/deployments/oforiwaasam/converterpro/github-pages?label=GitHub&nbsp;Pages)](https://oforiwaasam.github.io/converterpro)
+[![Documentation Status](https://readthedocs.org/projects/converterpro/badge/?version=latest)](https://converterpro.readthedocs.io/en/latest/?badge=latest)
 
 ## 🔭 Overview
 
