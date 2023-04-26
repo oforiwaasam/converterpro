@@ -19,6 +19,7 @@ plugins:
 nav:
 - Home:
   - Overview: index.md
+  - License: license.md
 - User Guide:
   - Weight Converter Usage: usage.md
 - API Reference: 

@@ -57,6 +57,7 @@ This library project is a pure python project using modern tooling. It uses a `M
 + `make test`: run automated tests with `pytest`
 + `make coverage`: run automated tests with `pytest` and collect coverage information
 <!-- END INCLUDE -->
+
 ## 👩🏾‍💻👨🏾‍💻 Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for more information.
