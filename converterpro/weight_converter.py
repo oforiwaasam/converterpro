@@ -38,11 +38,6 @@ class Gram:
     """
     The Gram class converts from grams to other units.
 
-    Attributes
-    ----------
-        value : float
-            the value in Grams that is to be converted.
-
     """
 
     def __init__(self, value):
