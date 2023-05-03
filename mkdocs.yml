@@ -13,7 +13,15 @@ watch:
 
 plugins:
   - search
-  - mkdocstrings
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            docstring_options:
+              ignore_init_summary: yes
+            merge_init_into_class: yes
+            show_submodules: no
   - include-markdown
 
 nav:
@@ -24,9 +32,15 @@ nav:
   - Weight Converter Usage: usage.md
 - API Reference: 
   - Weight Converter reference: weight_converter_reference.md
+- Development:
+  - Contributing: contributing.md
 
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
   icon: 
     repo: fontawesome/brands/github
   palette:
