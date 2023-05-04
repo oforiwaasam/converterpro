@@ -40,88 +40,86 @@ class Gram:
 
     """
 
-    def __init__(self, value):
+    def __init__(self, value: float = 1.0):
         """
         Constructs all the necessary attributes for the Gram object.
 
-        Parameters
-        ----------
-            value : float
-                value to be converted from Grams
+        Args:
+            value: float value to be converted from Grams
 
         """
 
         self.value = value
 
-    def convert_to_grams(self):
+    def convert_to_grams(self) -> float:
         """
         Converts value to grams
 
         Returns:
-            float: The new value in grams
+            value: The new value in grams
         """
-        return self.value
+        return self.value.__float__()
 
-    def convert_to_milligrams(self):
+    def convert_to_milligrams(self) -> float:
         """
         Converts value to milligrams
 
         Returns:
-            float: The new value in milligrams
+            value: The new value in milligrams
         """
         return self.value * THOUSAND
 
-    def convert_to_kilograms(self):
+    def convert_to_kilograms(self) -> float:
         """
         Converts value to kilograms
 
         Returns:
-            float: The new value in kilograms
+            value: The new value in kilograms
         """
         return self.value / THOUSAND
 
-    def convert_to_metric_tonnes(self):
+    def convert_to_metric_tonnes(self) -> float:
         """
         Converts value to metric tonnes
 
         Returns:
-            float: The new value in metric tonnes
+            value: The new value in metric tonnes
         """
         return self.value / MILLION
 
-    def convert_to_imperial_tons(self):
+    def convert_to_imperial_tons(self) -> float:
         """
         Converts value to imperial tons
 
         Returns:
-            float: The new value in imperial tons
+            value: The new value in imperial tons
         """
         return self.value / GRAMS_TO_IMPERIAL_TONS
 
-    def convert_to_us_tons(self):
+    def convert_to_us_tons(self) -> float:
         """
         Converts value to us tons
 
         Returns:
-            float: The new value in us tons
+            value: The new value in us tons
         """
         return self.value / GRAMS_TO_US_TONS
 
-    def convert_to_pounds(self):
+    def convert_to_pounds(self) -> float:
         """
         Converts value to pounds
 
         Returns:
-            float: The new value in pounds
+            value: The new value in pounds
         """
         return self.value / GRAMS_TO_POUNDS
 
-    def convert_to_ounces(self):
+    def convert_to_ounces(self) -> float:
         """
         Converts value to ounces
 
         Returns:
-            float: The new value in ounces
+            value: The new value in ounces
         """
         return self.value / GRAMS_TO_OUNCES
 
@@ -130,95 +128,88 @@ class Milligram:
     """
     The Milligram class converts from milligrams to other units.
 
-    Attributes
-    ----------
-    value : float
-        the value in Milligrams that is to be converted.
-
     """
 
-    def __init__(self, value):
+    def __init__(self, value: float = 1.0):
         """
         Constructs all the necessary attributes for the Milligram object.
 
-        Parameters
-        ----------
-            value : float
-                value to be converted from Milligrams
+        Args:
+            value: float value to be converted from Milligrams
 
         """
 
         self.value = value
 
-    def convert_to_grams(self):
+    def convert_to_grams(self) -> float:
         """
         Converts value to grams
 
         Returns:
-            float: The new value in grams
+            value: The new value in grams
         """
         return self.value / THOUSAND
 
-    def convert_to_milligrams(self):
+    def convert_to_milligrams(self) -> float:
         """
         Converts value to milligrams
 
         Returns:
-            float: The new value in milligrams
+            value: The new value in milligrams
         """
-        return self.value
+        return self.value.__float__()
 
-    def convert_to_kilograms(self):
+    def convert_to_kilograms(self) -> float:
         """
         Converts value to kilograms
 
         Returns:
-            float: The new value in kilograms
+            value: The new value in kilograms
         """
         return self.value / MILLION
 
-    def convert_to_metric_tonnes(self):
+    def convert_to_metric_tonnes(self) -> float:
         """
         Converts value to metric tonnes
 
         Returns:
-            float: The new value in metric tonnes
+            value: The new value in metric tonnes
         """
         return self.value / BILLION
 
-    def convert_to_imperial_tons(self):
+    def convert_to_imperial_tons(self) -> float:
         """
         Converts value to imperial tons
 
         Returns:
-            float: The new value in imperial tons
+            value: The new value in imperial tons
         """
         return self.value / MILLIGRAMS_TO_IMPERIAL_TONS
 
-    def convert_to_us_tons(self):
+    def convert_to_us_tons(self) -> float:
         """
         Converts value to us tons
 
         Returns:
-            float: The new value in us tons
+            value: The new value in us tons
         """
         return self.value / MILLIGRAMS_TO_US_TONS
 
-    def convert_to_pounds(self):
+    def convert_to_pounds(self) -> float:
         """
         Converts value to pounds
 
         Returns:
-            float: The new value in pounds
+            value: The new value in pounds
         """
         return self.value / MILLIGRAMS_TO_POUNDS
 
-    def convert_to_ounces(self):
+    def convert_to_ounces(self) -> float:
         """
         Converts value to ounces
 
         Returns:
-            float: The new value in ounces
+            value: The new value in ounces
         """
         return self.value / MILLIGRAMS_TO_OUNCES
 
@@ -227,95 +218,88 @@ class Kilogram:
     """
     The Kilogram class converts from kilograms to other units.
 
-    Attributes
-    ----------
-    value : float
-        the value in Kilograms that is to be converted.
-
     """
 
-    def __init__(self, value):
+    def __init__(self, value: float = 1.0):
         """
         Constructs all the necessary attributes for the Kilogram object.
 
-        Parameters
-        ----------
-            value : float
-                value to be converted from Kilograms
+        Args:
+            value: float value to be converted from Kilograms
 
         """
 
         self.value = value
 
-    def convert_to_grams(self):
+    def convert_to_grams(self) -> float:
         """
         Converts value to grams
 
         Returns:
-            float: The new value in grams
+            value: The new value in grams
         """
         return self.value * THOUSAND
 
-    def convert_to_milligrams(self):
+    def convert_to_milligrams(self) -> float:
         """
         Converts value to milligrams
 
         Returns:
-            float: The new value in milligrams
+            value: The new value in milligrams
         """
         return self.value * MILLION
 
-    def convert_to_kilograms(self):
+    def convert_to_kilograms(self) -> float:
         """
         Converts value to kilograms
 
         Returns:
-            float: The new value in kilograms
+            value: The new value in kilograms
         """
-        return self.value
+        return self.value.__float__()
 
-    def convert_to_metric_tonnes(self):
+    def convert_to_metric_tonnes(self) -> float:
         """
         Converts value to metric tonnes
 
         Returns:
-            float: The new value in metric tonnes
+            value: The new value in metric tonnes
         """
         return self.value / THOUSAND
 
-    def convert_to_imperial_tons(self):
+    def convert_to_imperial_tons(self) -> float:
         """
         Converts value to imperial tons
 
         Returns:
-            float: The new value in imperial tons
+            value: The new value in imperial tons
         """
         return self.value / KILOGRAMS_TO_IMPERIAL_TONS
 
-    def convert_to_us_tons(self):
+    def convert_to_us_tons(self) -> float:
         """
         Converts value to us tons
 
         Returns:
-            float: The new value in us tons
+            value: The new value in us tons
         """
         return self.value / KILOGRAMS_TO_US_TONS
 
-    def convert_to_pounds(self):
+    def convert_to_pounds(self) -> float:
         """
         Converts value to pounds
 
         Returns:
-            float: The new value in pounds
+            value: The new value in pounds
         """
         return self.value * KILOGRAMS_TO_POUNDS
 
-    def convert_to_ounces(self):
+    def convert_to_ounces(self) -> float:
         """
         Converts value to ounces
 
         Returns:
-            float: The new value in ounces
+            value: The new value in ounces
         """
         return self.value * KILOGRAMS_TO_OUNCES
 
@@ -324,95 +308,88 @@ class MetricTonnes:
     """
     The MetricTonnes class converts from Metric tonnes to other units.
 
-    Attributes
-    ----------
-    value : float
-        the value in MetricTonnes that is to be converted.
-
     """
 
-    def __init__(self, value):
+    def __init__(self, value: float = 1.0):
         """
         Constructs all the necessary attributes for the MetricTonnes object.
 
-        Parameters
-        ----------
-            value : float
-                value to be converted from MetricTonnes
+        Args:
+            value: float value to be converted from MetricTonnes
 
         """
 
         self.value = value
 
-    def convert_to_grams(self):
+    def convert_to_grams(self) -> float:
         """
         Converts value to grams
 
         Returns:
-            float: The new value in grams
+            value: The new value in grams
         """
         return self.value * MILLION
 
-    def convert_to_milligrams(self):
+    def convert_to_milligrams(self) -> float:
         """
         Converts value to milligrams
 
         Returns:
-            float: The new value in milligrams
+            value: The new value in milligrams
         """
         return self.value * BILLION
 
-    def convert_to_kilograms(self):
+    def convert_to_kilograms(self) -> float:
         """
         Converts value to kilograms
 
         Returns:
-            float: The new value in kilograms
+            value: The new value in kilograms
         """
         return self.value * THOUSAND
 
-    def convert_to_metric_tonnes(self):
+    def convert_to_metric_tonnes(self) -> float:
         """
         Converts value to metric tonnes
 
         Returns:
-            float: The new value in metric tonnes
+            value: The new value in metric tonnes
         """
-        return self.value
+        return self.value.__float__()
 
-    def convert_to_imperial_tons(self):
+    def convert_to_imperial_tons(self) -> float:
         """
         Converts value to imperial tons
 
         Returns:
-            float: The new value in imperial tons
+            value: The new value in imperial tons
         """
         return self.value / METRIC_TONNES_TO_IMPERIAL_TONS
 
-    def convert_to_us_tons(self):
+    def convert_to_us_tons(self) -> float:
         """
         Converts value to us tons
 
         Returns:
-            float: The new value in us tons
+            value: The new value in us tons
         """
         return self.value * METRIC_TONNES_TO_US_TONS
 
-    def convert_to_pounds(self):
+    def convert_to_pounds(self) -> float:
         """
         Converts value to pounds
 
         Returns:
-            float: The new value in pounds
+            value: The new value in pounds
         """
         return self.value * METRIC_TONNES_TO_POUNDS
 
-    def convert_to_ounces(self):
+    def convert_to_ounces(self) -> float:
         """
         Converts value to ounces
 
         Returns:
-            float: The new value in ounces
+            value: The new value in ounces
         """
         return self.value * METRIC_TONNES_TO_OUNCES
 
@@ -422,95 +399,88 @@ class ImperialTons:
     """
     The ImperialTons class converts from imperial tons to other units.
 
-    Attributes
-    ----------
-    value : float
-        the value in ImperialTons that is to be converted.
-
     """
 
-    def __init__(self, value):
+    def __init__(self, value: float = 1.0):
         """
         Constructs all the necessary attributes for the ImperialTons object.
 
-        Parameters
-        ----------
-            value : float
-                value to be converted from ImperialTons
+        Args:
+            value: float value to be converted from ImperialTons
 
         """
 
         self.value = value
 
-    def convert_to_grams(self):
+    def convert_to_grams(self) -> float:
         """
         Converts value to grams
 
         Returns:
-            float: The new value in grams
+            value: The new value in grams
         """
         return self.value * GRAMS_TO_IMPERIAL_TONS
 
-    def convert_to_milligrams(self):
+    def convert_to_milligrams(self) -> float:
         """
         Converts value to milligrams
 
         Returns:
-            float: The new value in milligrams
+            value: The new value in milligrams
         """
         return self.value * MILLIGRAMS_TO_IMPERIAL_TONS
 
-    def convert_to_kilograms(self):
+    def convert_to_kilograms(self) -> float:
         """
         Converts value to kilograms
 
         Returns:
-            float: The new value in kilograms
+            value: The new value in kilograms
         """
         return self.value * KILOGRAMS_TO_IMPERIAL_TONS
 
-    def convert_to_metric_tonnes(self):
+    def convert_to_metric_tonnes(self) -> float:
         """
         Converts value to metric tonnes
 
         Returns:
-            float: The new value in metric tonnes
+            value: The new value in metric tonnes
         """
         return self.value * METRIC_TONNES_TO_IMPERIAL_TONS
 
-    def convert_to_imperial_tons(self):
+    def convert_to_imperial_tons(self) -> float:
         """
         Converts value to imperial tons
 
         Returns:
-            float: The new value in imperial tons
+            value: The new value in imperial tons
         """
-        return self.value
+        return self.value.__float__()
 
-    def convert_to_us_tons(self):
+    def convert_to_us_tons(self) -> float:
         """
         Converts value to us tons
 
         Returns:
-            float: The new value in us tons
+            value: The new value in us tons
         """
         return self.value * IMPERIAL_TONS_TO_US_TONS
 
-    def convert_to_pounds(self):
+    def convert_to_pounds(self) -> float:
         """
         Converts value to pounds
 
         Returns:
-            float: The new value in pounds
+            value: The new value in pounds
         """
         return self.value * IMPERIAL_TONS_TO_POUNDS
 
-    def convert_to_ounces(self):
+    def convert_to_ounces(self) -> float:
         """
         Converts value to ounces
 
         Returns:
-            float: The new value in ounces
+            value: The new value in ounces
         """
         return self.value * IMPERIAL_TONS_TO_OUNCES
 
@@ -520,95 +490,88 @@ class USTons:
     """
     The USTons class converts from US Tons to other units.
 
-    Attributes
-    ----------
-    value : float
-        the value in USTons that is to be converted.
-
     """
 
-    def __init__(self, value):
+    def __init__(self, value: float = 1.0):
         """
         Constructs all the necessary attributes for the USTons object.
 
-        Parameters
-        ----------
-            value : float
-                value to be converted from USTons
+        Args:
+            value: float value to be converted from USTons
 
         """
 
         self.value = value
 
-    def convert_to_grams(self):
+    def convert_to_grams(self) -> float:
         """
         Converts value to grams
 
         Returns:
-            float: The new value in grams
+            value: The new value in grams
         """
         return self.value * GRAMS_TO_US_TONS
 
-    def convert_to_milligrams(self):
+    def convert_to_milligrams(self) -> float:
         """
         Converts value to milligrams
 
         Returns:
-            float: The new value in milligrams
+            value: The new value in milligrams
         """
         return self.value * MILLIGRAMS_TO_US_TONS
 
-    def convert_to_kilograms(self):
+    def convert_to_kilograms(self) -> float:
         """
         Converts value to kilograms
 
         Returns:
-            float: The new value in kilograms
+            value: The new value in kilograms
         """
         return self.value * KILOGRAMS_TO_US_TONS
 
-    def convert_to_metric_tonnes(self):
+    def convert_to_metric_tonnes(self) -> float:
         """
         Converts value to metric tonnes
 
         Returns:
-            float: The new value in metric tonnes
+            value: The new value in metric tonnes
         """
         return self.value / METRIC_TONNES_TO_US_TONS
 
-    def convert_to_imperial_tons(self):
+    def convert_to_imperial_tons(self) -> float:
         """
         Converts value to imperial tons
 
         Returns:
-            float: The new value in imperial tons
+            value: The new value in imperial tons
         """
         return self.value / IMPERIAL_TONS_TO_US_TONS
 
-    def convert_to_us_tons(self):
+    def convert_to_us_tons(self) -> float:
         """
         Converts value to us tons
 
         Returns:
-            float: The new value in us tons
+            value: The new value in us tons
         """
-        return self.value
+        return self.value.__float__()
 
-    def convert_to_pounds(self):
+    def convert_to_pounds(self) -> float:
         """
         Converts value to pounds
 
         Returns:
-            float: The new value in pounds
+            value: The new value in pounds
         """
         return self.value * US_TONS_TO_POUNDS
 
-    def convert_to_ounces(self):
+    def convert_to_ounces(self) -> float:
         """
         Converts value to ounces
 
         Returns:
-            float: The new value in ounces
+            value: The new value in ounces
         """
         return self.value * US_TONS_TO_OUNCES
 
@@ -617,95 +580,88 @@ class Pounds:
     """
     The Pounds class converts from pounds to other units.
 
-    Attributes
-    ----------
-    value : float
-        the value in Pounds that is to be converted.
-
     """
 
-    def __init__(self, value):
+    def __init__(self, value: float = 1.0):
         """
         Constructs all the necessary attributes for the Pound object.
 
-        Parameters
-        ----------
-            value : float
-                value to be converted from Pounds
+        Args:
+            value: float value to be converted from Pounds
 
         """
 
         self.value = value
 
-    def convert_to_grams(self):
+    def convert_to_grams(self) -> float:
         """
         Converts value to grams
 
         Returns:
-            float: The new value in grams
+            value: The new value in grams
         """
         return self.value * GRAMS_TO_POUNDS
 
-    def convert_to_milligrams(self):
+    def convert_to_milligrams(self) -> float:
         """
         Converts value to milligrams
 
         Returns:
-            float: The new value in milligrams
+            value: The new value in milligrams
         """
         return self.value * MILLIGRAMS_TO_POUNDS
 
-    def convert_to_kilograms(self):
+    def convert_to_kilograms(self) -> float:
         """
         Converts value to kilograms
 
         Returns:
-            float: The new value in kilograms
+            value: The new value in kilograms
         """
         return self.value / KILOGRAMS_TO_POUNDS
 
-    def convert_to_metric_tonnes(self):
+    def convert_to_metric_tonnes(self) -> float:
         """
         Converts value to metric tonnes
 
         Returns:
-            float: The new value in metric tonnes
+            value: The new value in metric tonnes
         """
         return self.value / METRIC_TONNES_TO_POUNDS
 
-    def convert_to_imperial_tons(self):
+    def convert_to_imperial_tons(self) -> float:
         """
         Converts value to imperial tons
 
         Returns:
-            float: The new value in imperial tons
+            value: The new value in imperial tons
         """
         return self.value / IMPERIAL_TONS_TO_POUNDS
 
-    def convert_to_us_tons(self):
+    def convert_to_us_tons(self) -> float:
         """
         Converts value to us tons
 
         Returns:
-            float: The new value in us tons
+            value: The new value in us tons
         """
         return self.value / US_TONS_TO_POUNDS
 
-    def convert_to_pounds(self):
+    def convert_to_pounds(self) -> float:
         """
         Converts value to pounds
 
         Returns:
-            float: The new value in pounds
+            value: The new value in pounds
         """
-        return self.value
+        return self.value.__float__()
 
-    def convert_to_ounces(self):
+    def convert_to_ounces(self) -> float:
         """
         Converts value to ounces
 
         Returns:
-            float: The new value in ounces
+            value: The new value in ounces
         """
         return self.value * POUNDS_TO_OUNCES
 
@@ -714,94 +670,87 @@ class Ounces:
     """
     The Ounces class converts from ounces to other units.
 
-    Attributes
-    ----------
-    value : float
-        the value in Ounces that is to be converted.
-
     """
 
     def __init__(self, value: float = 1.0):
         """
         Constructs all the necessary attributes for the Ounce object.
 
-        Parameters
-        ----------
-            value : float
-                value to be converted from Ounces
+        Args:
+            value: float value to be converted from Ounces
 
         """
 
         self.value = value
 
-    def convert_to_grams(self):
+    def convert_to_grams(self) -> float:
         """
         Converts value to grams
 
         Returns:
-            float: The new value in grams
+            value: The new value in grams
         """
         return self.value * GRAMS_TO_OUNCES
 
-    def convert_to_milligrams(self):
+    def convert_to_milligrams(self) -> float:
         """
         Converts value to milligrams
 
         Returns:
-            float: The new value in milligrams
+            value: The new value in milligrams
         """
         return self.value * MILLIGRAMS_TO_OUNCES
 
-    def convert_to_kilograms(self):
+    def convert_to_kilograms(self) -> float:
         """
         Converts value to kilograms
 
         Returns:
-            float: The new value in kilograms
+            value: The new value in kilograms
         """
         return self.value / KILOGRAMS_TO_OUNCES
 
-    def convert_to_metric_tonnes(self):
+    def convert_to_metric_tonnes(self) -> float:
         """
         Converts value to metric tonnes
 
         Returns:
-            float: The new value in metric tonnes
+            value: The new value in metric tonnes
         """
         return self.value / METRIC_TONNES_TO_OUNCES
 
-    def convert_to_imperial_tons(self):
+    def convert_to_imperial_tons(self) -> float:
         """
         Converts value to imperial tons
 
         Returns:
-            float: The new value in imperial tons
+            value: The new value in imperial tons
         """
         return self.value / IMPERIAL_TONS_TO_OUNCES
 
-    def convert_to_us_tons(self):
+    def convert_to_us_tons(self) -> float:
         """
         Converts value to us tons
 
         Returns:
-            float: The new value in us tons
+            value: The new value in us tons
         """
         return self.value / US_TONS_TO_OUNCES
 
-    def convert_to_pounds(self):
+    def convert_to_pounds(self) -> float:
         """
         Converts value to pounds
 
         Returns:
-            float: The new value in pounds
+            value: The new value in pounds
         """
         return self.value / POUNDS_TO_OUNCES
 
-    def convert_to_ounces(self):
+    def convert_to_ounces(self) -> float:
         """
         Converts value to ounces
 
         Returns:
-            float: The new value in ounces
+            value: The new value in ounces
         """
-        return self.value
+        return self.value.__float__()

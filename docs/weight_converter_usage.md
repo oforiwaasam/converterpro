@@ -1,4 +1,4 @@
-## ⛯ Usage
+# ⛯ Weight Converter Usage
 
 Below are some usage examples for this library:
 
