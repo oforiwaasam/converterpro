@@ -37,7 +37,7 @@ This python library will allow developers to easily incorporate conversions into
 pip install converterpro
 ```
 
-## ⛯ Usage
+## ⛯ Basic Usage
 
 ```python3
 >>> from converterpro import weight_converter
@@ -60,11 +60,11 @@ This library project is a pure python project using modern tooling. It uses a `M
 
 ## 👩🏾‍💻👨🏾‍💻 Contributing
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) for more information.
+Please see [CONTRIBUTING](https://converterpro.readthedocs.io/en/latest/contributing/) for more information.
 
 ## 🪪 License
 
-This software is licensed under the Apache 2.0 license. Please see [LICENSE](LICENSE) for more information.
+This software is licensed under the Apache 2.0 license. Please see [LICENSE](https://converterpro.readthedocs.io/en/latest/license/) for more information.
 
 ## 🙎🏾‍ Author
 

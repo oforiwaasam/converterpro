@@ -29,9 +29,9 @@ nav:
   - Overview: index.md
   - License: license.md
 - User Guide:
-  - Weight Converter Usage: usage.md
+  - Weight Converter: weight_converter_usage.md
 - API Reference: 
-  - Weight Converter reference: weight_converter_reference.md
+  - Weight Converter: weight_converter_reference.md
 - Development:
   - Contributing: contributing.md
 

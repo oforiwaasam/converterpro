@@ -5,7 +5,7 @@ description = "Python converter library"
 authors = ["Lily Sam <los2119@columbia.edu>"]
 license = "Apache-2.0"
 readme = "README.md"
-homepage = "https://github.com/oforiwaasam/converterpro"
+homepage = "http://converterpro.readthedocs.io/"
 repository = "https://github.com/oforiwaasam/converterpro"
 keywords = ["weight-conversion", "converter", "oforiwaasam"]
 
