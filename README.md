@@ -37,6 +37,34 @@ This python library will allow developers to easily incorporate conversions into
 pip install converterpro
 ```
 
+## 🧰 Local development setup
+
+To work on this project locally, make sure you have Python 3.9 or newer and [Poetry](https://python-poetry.org/) installed. It is recommended to create a virtual environment first so your dependencies stay isolated.
+
+```bash
+git clone https://github.com/oforiwaasam/converterpro.git
+cd converterpro
+python3 -m venv .venv
+source .venv/bin/activate
+poetry install
+make install
+```
+
+If you also want the documentation dependencies installed, run:
+
+```bash
+poetry install --with docs
+```
+
+Once the environment is ready, you can run the project checks:
+
+```bash
+make lint
+make test
+```
+
+If you prefer to work inside the Poetry environment directly, use `poetry shell` before running commands.
+
 ## ⛯ Basic Usage
 
 ```python3
