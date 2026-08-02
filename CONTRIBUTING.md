@@ -1,6 +1,6 @@
 # Contributing
 
-If you want to contribute to this repository here are some helpful guidelines.
+If you want to contribute to this repository, here are some helpful guidelines.
 
 ## Reporting bugs, feature requests, etc
 
@@ -28,13 +28,19 @@ If you want to help resolve an issue by making some changes that are larger than
 
 - Fork the repository on Github
 - Clone your fork to your computer
+- Install the required tools first:
+  - Python 3.9 or newer
+  - Poetry
+- Create and activate a virtual environment for the project:
+  - `python3 -m venv .venv`
+  - `source .venv/bin/activate`
 - Run the following commands inside the cloned repository:
-  - `make develop` - This will install the package in development
-    mode
+  - `poetry install` - This installs the package and its dependencies in a Poetry-managed environment
+  - `poetry install --with docs` - Optional: installs the documentation dependencies as well
+  - `make install` - This prepares the local development environment using the installed dependencies
 - Validate the install by running the tests:
-  - `make lint` - This command will run any static analysis tools/lints
-  - `make test` - This command will run the unit tests
-  - `make check` - This command will run any other checks
+  - `make lint` - This command runs the static analysis tools and formatting checks
+  - `make test` - This command runs the unit tests
 
 Once you have such a development setup, you should:
 
